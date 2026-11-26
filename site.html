@@ -1,0 +1,443 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ружинський ліцей</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7f6;
+            color: #25332c;
+        }
+
+        header {
+            background: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #176b45;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #176b45;
+        }
+
+        .hero {
+            min-height: 420px;
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(12, 55, 35, 0.85),
+                    rgba(12, 55, 35, 0.15)
+                ),
+                url("https://ruzinf.ukr.school/wp-content/uploads/sites/21/2023/10/20230928_105802-scaled-e1698836540525.jpg")
+                center/cover;
+
+            display: flex;
+            align-items: center;
+            padding: 60px 10%;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0 0 15px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 13px 24px;
+            background: #f0c94a;
+            color: #243c2e;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 55px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 35px;
+            color: #176b45;
+        }
+
+        .about {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 35px;
+            align-items: center;
+        }
+
+        .about img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .about p {
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 3px 12px #0000000d;
+        }
+
+        .card h3 {
+            color: #176b45;
+            margin-top: 0;
+        }
+
+        .news {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .news img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+        }
+
+        .news-content {
+            padding: 20px;
+        }
+
+        .date {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .news a {
+            color: #176b45;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .contact {
+            background: #e8f1eb;
+        }
+
+        .contact-box {
+            max-width: 650px;
+            margin: auto;
+            text-align: center;
+            line-height: 2;
+            font-size: 17px;
+        }
+
+        .contact a {
+            color: #176b45;
+        }
+
+        footer {
+            background: #174b34;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                justify-content: center;
+            }
+
+            nav {
+                justify-content: center;
+                gap: 12px;
+            }
+
+            .hero {
+                min-height: 350px;
+                padding: 35px 7%;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .about,
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 40px 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Ружинський ліцей</div>
+
+    <nav>
+        <a href="#about">Про ліцей</a>
+        <a href="#study">Навчання</a>
+        <a href="#news">Новини</a>
+        <a href="#contacts">Контакти</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Ружинський ліцей</h1>
+
+        <p>
+            Освіта, розвиток і нові можливості
+            для кожного учня.
+        </p>
+
+        <a class="button" href="#about">
+            Дізнатися більше
+        </a>
+    </div>
+</section>
+
+<section class="container" id="about">
+    <h2 class="section-title">Про наш ліцей</h2>
+
+    <div class="about">
+        <div>
+            <h3>Знання та традиції</h3>
+
+            <p>
+                Ружинський ліцей — заклад загальної
+                середньої освіти Ружинської селищної
+                ради Житомирської області.
+            </p>
+
+            <p>
+                Історія школи бере початок у 1873 році.
+                Сьогодні ліцей поєднує багаторічні
+                традиції та сучасний підхід до навчання.
+            </p>
+
+            <p>
+                Тут учні здобувають знання, розвивають
+                свої здібності та готуються до
+                майбутнього.
+            </p>
+        </div>
+
+        <img
+            src="https://ruzinf.ukr.school/wp-content/uploads/sites/21/2025/09/IMG_4116-scaled.jpg"
+            alt="Шкільні дзвони Ружинського ліцею"
+        >
+    </div>
+</section>
+
+<section class="container" id="study">
+    <h2 class="section-title">Навчання</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Початкова школа</h3>
+            <p>
+                Перші кроки у навчанні,
+                розвиток здібностей та
+                цікаві відкриття.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Гімназія</h3>
+            <p>
+                Поглиблення знань,
+                розвиток самостійності
+                та підготовка до старших класів.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Профільне навчання</h3>
+            <p>
+                Математичний профіль та
+                профіль української філології.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="container" id="news">
+    <h2 class="section-title">Новини ліцею</h2>
+
+    <div class="cards">
+
+        <div class="news">
+            <img
+                src="https://ruzinf.ukr.school/wp-content/uploads/sites/21/2026/11/5201749538207637770-1-e1795594926540-300x163.jpg"
+                alt="Учні Ружинського ліцею"
+            >
+
+            <div class="news-content">
+                <p class="date">25 листопада 2026</p>
+
+                <h3>16 днів проти насильства</h3>
+
+                <p>
+                    Ліцей долучається до щорічної
+                    Всеукраїнської кампанії,
+                    присвяченої взаємоповазі
+                    та безпеці.
+                </p>
+
+                <a href="https://ruzinf.ukr.school/">
+                    Читати на офіційному сайті →
+                </a>
+            </div>
+        </div>
+
+        <div class="news">
+            <img
+                src="https://ruzinf.ukr.school/wp-content/uploads/sites/21/2025/09/IMG_4116-scaled.jpg"
+                alt="Шкільні традиції"
+            >
+
+            <div class="news-content">
+                <p class="date">17 листопада 2026</p>
+
+                <h3>Конкурс знавців української мови</h3>
+
+                <p>
+                    У ліцеї відбувся перший етап
+                    Міжнародного конкурсу
+                    з української мови
+                    імені Петра Яцика.
+                </p>
+
+                <a href="https://ruzinf.ukr.school/">
+                    Читати на офіційному сайті →
+                </a>
+            </div>
+        </div>
+
+        <div class="news">
+            <img
+                src="https://ruzinf.ukr.school/wp-content/uploads/sites/21/2026/11/5190767985436597492-1-1-1-200x150.jpg"
+                alt="Шкільне життя"
+            >
+
+            <div class="news-content">
+                <p class="date">22 листопада 2026</p>
+
+                <h3>День Гідності та Свободи</h3>
+
+                <p>
+                    Учні ліцею долучилися
+                    до тематичних заходів,
+                    присвячених гідності,
+                    свободі та пам’яті.
+                </p>
+
+                <a href="https://ruzinf.ukr.school/">
+                    Читати на офіційному сайті →
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contacts">
+    <div class="container">
+        <h2 class="section-title">Контакти</h2>
+
+        <div class="contact-box">
+            <p>
+                <b>Ружинський ліцей</b>
+            </p>
+
+            <p>
+                Адреса: Житомирська область,
+                Бердичівський район,
+                селище Ружин, вул. Київська, 43
+            </p>
+
+            <p>
+                Телефон:
+                <a href="tel:+380963057818">
+                    +38 (096) 305-78-18
+                </a>
+            </p>
+
+            <p>
+                Email:
+                <a href="mailto:ruzinf@i.ua">
+                    ruzinf@i.ua
+                </a>
+            </p>
+
+            <p>
+                <a href="https://ruzinf.ukr.school/"
+                   target="_blank">
+                    Перейти на офіційний сайт ліцею
+                </a>
+            </p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Ружинський ліцей</p>
+    <p>Знання — запорука майбутнього!</p>
+</footer>
+
+</body>
+</html>
